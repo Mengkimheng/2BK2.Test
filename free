@@ -1,6 +1,3 @@
-
-
-
 shared.LoaderTitle = "Khmer Hub";
 shared.LoaderKeyFrames = {
     [1] = {
