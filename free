@@ -1,4 +1,4 @@
--- discord.gg/tboyroblox
+-- test
 
 
 shared.LoaderTitle = "Khmer Hub";
@@ -353,13 +353,13 @@ local v16 = {
         Title = "ក្លែងក្លាយ"
     }),
     Fruit = v15:AddTab({
-        Title = "ឆ្វេង"
+        Title = "Fruit"
     }),
     Raid = v15:AddTab({
         Title = "ប៉ះ ចុច"
     }),
     Race = v15:AddTab({
-        Title = "ត្រកូល"
+        Title = "ត្រកូល V4"
     }),
     Shop = v15:AddTab({
         Title = "ហាង"
