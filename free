@@ -4625,7 +4625,7 @@ if Sea3 then
     end);
 end
 if Sea3 then
-    local v531 = v16.Sea:AddSection("Đảo Bí Ẩn");
+    local v531 = v16.Sea:AddSection("Mirage Island");
     local v532 = v16.Sea:AddParagraph({
         Title = "ស្ថានភាព",
         Content = ""
@@ -4664,12 +4664,12 @@ if Sea3 then
     spawn(function()
         pcall(function()
             while wait() do
-                v532:SetDesc("Đảo Bí Ẩn: " .. MirageStatus .. " | Trăng Tròn: " .. FullMoonStatus);
+                v532:SetDesc("កោះអាថ៌កំបាំង: " .. MirageStatus .. " | ព្រះច័ន្ទពេញ: " .. FullMoonStatus);
             end
         end);
     end);
     v16.Sea:AddButton({
-        Title = "Bay Đến Chỗ Cao",
+        Title = "ហោះហើរទៅកន្លែងខ្ពស់។",
         Description = "",
         Callback = function()
             TweenToHighestPoint();
@@ -4695,7 +4695,7 @@ if Sea3 then
     end
 end
 local v66 = v16.Sea:AddToggle("ToggleTpAdvanced", {
-    Title = "Bay Đến Advanced Fruit Dealer",
+    Title = "ហោះហើរទៅ Advanced Fruit Dealer",
     Description = "",
     Default = false
 });
@@ -4716,7 +4716,7 @@ spawn(function()
     end
 end);
 local v67 = v16.Sea:AddToggle("ToggleTweenGear", {
-    Title = "Bay Đến Bánh Răng",
+    Title = "ហោះហើរទៅ BlueGear",
     Description = "",
     Default = false
 });
@@ -4742,7 +4742,7 @@ spawn(function()
     end);
 end);
 local v68 = v16.Sea:AddToggle("Togglelockmoon", {
-    Title = "Nhìn Trăng Và ប្រើត្រកូល",
+    Title = "សម្លឹងមើលព្រះច័ន្ទ និង ប្រើV3",
     Description = "",
     Default = false
 });
@@ -4923,7 +4923,7 @@ spawn(function()
     end
 end);
 local v72 = v16.ITM:AddToggle("ToggleAutoSaw", {
-    Title = "Cưa Cá Mập",
+    Title = "Shark Sword",
     Description = "",
     Default = false
 });
@@ -4965,7 +4965,7 @@ spawn(function()
     end
 end);
 local v73 = v16.ITM:AddToggle("ToggleAutoWarden", {
-    Title = "Kiếm Quản Ngục",
+    Title = "Warden Sword",
     Description = "",
     Default = false
 });
@@ -5008,7 +5008,7 @@ spawn(function()
 end);
 if Sea3 then
     local v533 = v16.ITM:AddToggle("ToggleHallow", {
-        Title = "Lưỡi Hái",
+        Title = "Hallow Sword",
         Description = "",
         Default = false
     });
@@ -5124,7 +5124,7 @@ if Sea3 then
         end
     end);
     local v536 = v16.ITM:AddToggle("ToggleHoly", {
-        Title = "Đốt Đuốc",
+        Title = "Holy toch",
         Description = "",
         Default = false
     });
@@ -5209,7 +5209,7 @@ spawn(function()
     end
 end);
 local v76 = v16.ITM:AddToggle("ToggleAutoMusketeerHat", {
-    Title = "Mũ Lính Ngự Lâm",
+    Title = "មួករបស់ Musketeer",
     Description = "",
     Default = false
 });
@@ -5293,7 +5293,7 @@ spawn(function()
     end);
 end);
 local v77 = v16.ITM:AddToggle("ToggleAutoObservationV2", {
-    Title = "Haki Quan Sát V2",
+    Title = "Haki V2",
     Description = "",
     Default = false
 });
@@ -5341,7 +5341,7 @@ spawn(function()
     end
 end);
 local v78 = v16.ITM:AddToggle("ToggleAutoRainbowHaki", {
-    Title = "Haki 7 Màu",
+    Title = "Rainbow Haki",
     Description = "",
     Default = false
 });
@@ -5466,7 +5466,7 @@ spawn(function()
     end);
 end);
 local v79 = v16.ITM:AddToggle("ToggleAutoSkullGuitar", {
-    Title = "Skull Guitar",
+    Title = "Auto Skull Guitar",
     Description = "",
     Default = false
 });
@@ -5589,7 +5589,7 @@ spawn(function()
     end
 end);
 local v80 = v16.ITM:AddToggle("ToggleAutoBuddy", {
-    Title = "Kiếm Buddy",
+    Title = "Sword Buddy",
     Description = "",
     Default = false
 });
@@ -5631,7 +5631,7 @@ spawn(function()
     end
 end);
 local v82 = v16.ITM:AddToggle("ToggleAutoDualKatana", {
-    Title = "Song Kiếm",
+    Title = "Auto CDK",
     Description = "",
     Default = false
 });
@@ -6061,7 +6061,7 @@ spawn(function()
 end);
 if Sea2 then
     local v537 = v16.ITM:AddToggle("ToggleFactory", {
-        Title = "Đấm Nhà Máy",
+        Title = "Farm Factory",
         Description = "",
         Default = false
     });
@@ -6106,7 +6106,7 @@ if Sea2 then
     end);
 end
 local v83 = v16.ITM:AddToggle("ToggleAutoFarmSwan", {
-    Title = "Đấm Swan",
+    Title = "Kill Swan",
     Description = "",
     Default = false
 });
@@ -6188,7 +6188,7 @@ spawn(function()
 end);
 if (Sea2 or Sea3) then
     local v538 = v16.ITM:AddToggle("ToggleHakiColor", {
-        Title = "Mua Màu Haki",
+        Title = "ទិញ Color Haki",
         Description = "",
         Default = false
     });
@@ -6210,7 +6210,7 @@ if (Sea2 or Sea3) then
 end
 if Sea2 then
     local v539 = v16.Main:AddToggle("ToggleSwordLengend", {
-        Title = "Mua Kiếm Huyền Thoại",
+        Title = "ទិញដាវ Lengendary",
         Description = "",
         Default = false
     });
@@ -6236,7 +6236,7 @@ if Sea2 then
 end
 if Sea2 then
     local v540 = v16.Main:AddToggle("ToggleEvoRace", {
-        Title = "Nâng ត្រកូល V2",
+        Title = "auto race V2",
         Description = "",
         Default = false
     });
@@ -6295,7 +6295,7 @@ if Sea2 then
     end);
 end
 local v85 = v16.Setting:AddToggle("ToggleAutoT", {
-    Title = "Bật ត្រកូល V3",
+    Title = "Autoបើក V3",
     Description = "",
     Default = false
 });
@@ -6313,7 +6313,7 @@ spawn(function()
     end
 end);
 local v86 = v16.Setting:AddToggle("ToggleAutoY", {
-    Title = "Bật ត្រកូល V4",
+    Title = "Autoបើក V4",
     Description = "",
     Default = false
 });
@@ -6333,7 +6333,7 @@ spawn(function()
     end
 end);
 local v87 = v16.Setting:AddToggle("ToggleAutoKen", {
-    Title = "Bật Haki Quan Sât",
+    Title = "បើកការសង្កេត Haki",
     Description = "",
     Default = false
 });
@@ -6356,7 +6356,7 @@ spawn(function()
     end
 end);
 local v88 = v16.Setting:AddToggle("ToggleSaveSpawn", {
-    Title = "Lưu Điểm Hồi Sinh",
+    Title = "រក្សាទុកពិន្ទុរស់ឡើងវិញ",
     Description = "",
     Default = false
 });
@@ -6385,7 +6385,7 @@ end);
 local v89 = require(game.ReplicatedStorage.Util.CameraShaker);
 v89:Stop();
 local v90 = v16.Setting:AddToggle("ToggleBringMob", {
-    Title = "Gom Quái",
+    Title = "ប្រមូលផ្តុំបិសាច",
     Description = "",
     Default = true
 });
@@ -6434,7 +6434,7 @@ spawn(function()
     end
 end);
 local v91 = v16.Setting:AddToggle("ToggleRemoveNotify", {
-    Title = "Xóa Thông Báo",
+    Title = "លុបការជូនដំណឹង",
     Description = "",
     Default = false
 });
@@ -6452,7 +6452,7 @@ spawn(function()
     end
 end);
 local v92 = v16.Setting:AddToggle("ToggleWhite", {
-    Title = "Màn Hình Trắng",
+    Title = "អេក្រង់ពណ៌ស",
     Description = "",
     Default = false
 });
@@ -6465,9 +6465,9 @@ v92:OnChanged(function(v279)
     end
 end);
 v17.ToggleWhite:SetValue(false);
-local v93 = v16.Setting:AddSection("Kĩ Năng Thông Thạo");
+local v93 = v16.Setting:AddSection("Use Skill");
 local v94 = v16.Setting:AddToggle("ToggleZ", {
-    Title = "Kĩ Năng Z",
+    Title = "Skill Z",
     Description = "",
     Default = true
 });
@@ -6476,7 +6476,7 @@ v94:OnChanged(function(v280)
 end);
 v17.ToggleZ:SetValue(true);
 local v95 = v16.Setting:AddToggle("ToggleX", {
-    Title = "Kĩ Năng X",
+    Title = "Skill X",
     Description = "",
     Default = true
 });
@@ -6485,7 +6485,7 @@ v95:OnChanged(function(v281)
 end);
 v17.ToggleX:SetValue(true);
 local v96 = v16.Setting:AddToggle("ToggleC", {
-    Title = "Kĩ Năng C",
+    Title = "Skill C",
     Description = "",
     Default = true
 });
@@ -6494,7 +6494,7 @@ v96:OnChanged(function(v282)
 end);
 v17.ToggleC:SetValue(true);
 local v97 = v16.Setting:AddToggle("ToggleV", {
-    Title = "Kĩ Năng V",
+    Title = "Skill V",
     Description = "",
     Default = true
 });
@@ -6503,7 +6503,7 @@ v97:OnChanged(function(v283)
 end);
 v17.ToggleV:SetValue(true);
 local v98 = v16.Setting:AddToggle("ToggleF", {
-    Title = "Kĩ Năng F",
+    Title = "Skill F",
     Description = "",
     Default = false
 });
