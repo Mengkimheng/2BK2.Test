@@ -359,7 +359,7 @@ local v16 = {
         Title = "ប៉ះ ចុច"
     }),
     Race = v15:AddTab({
-        Title = "ត្រកូល"
+        Title = "ត្រកូលV4"
     }),
     Shop = v15:AddTab({
         Title = "ហាង"
