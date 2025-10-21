@@ -9321,7 +9321,7 @@ spawn(function()
     end
 end);
 v14:Notify({
-    Title = "ធ្វើសម្រាប់ប្រើប្រាស់សាកល្បង",
+    Title = "007",
     Content = "ទាញយករួចរាល់",
     Duration = 10
 });
