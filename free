@@ -3384,7 +3384,7 @@ if Sea3 then
         end
     end);
     local v495 = v16.Main:AddToggle("ToggleSpawnCake", {
-        Title = "រំលឹកឡើងវិញ នំខេកមេបញ្ជាការ",
+        Title = "Spawn នំខេកមេបញ្ជាការ",
         Description = "",
         Default = true
     });
@@ -3651,16 +3651,16 @@ spawn(function()
     end
 end);
 if Sea3 then
-    local v498 = v16.Sea:AddSection("កោះហ្វក");
+    local v498 = v16.Sea:AddSection("កោះKitsune");
     local v499 = v16.Sea:AddParagraph({
-        Title = "ស្ថានភាព កោះហ្វក",
+        Title = "ស្ថានភាព កោះKitsune",
         Content = ""
     });
     function UpdateKitsune()
         if game:GetService("Workspace").Map:FindFirstChild("KitsuneIsland") then
-            v499:SetDesc("កោះហ្វក : ✅️");
+            v499:SetDesc("កោះKitsune : ✅️");
         else
-            v499:SetDesc("កោះហ្វក : ❌️");
+            v499:SetDesc("កោះkitsune : ❌️");
         end
     end
     spawn(function()
@@ -3671,7 +3671,7 @@ if Sea3 then
         end);
     end);
     local v500 = v16.Sea:AddToggle("ToggleEspKitsune", {
-        Title = "ការកំណត់ទីតាំង កោះហ្វក",
+        Title = "ការកំណត់ទីតាំង Kitsune",
         Description = "",
         Default = false
     });
@@ -3715,7 +3715,7 @@ if Sea3 then
         end
     end
     local v501 = v16.Sea:AddToggle("ToggleTPKitsune", {
-        Title = "ហោះចូល កោះហ្វក",
+        Title = "ហោះចូលកោះ Kitsune",
         Description = "",
         Default = false
     });
@@ -3778,7 +3778,7 @@ if Sea3 then
     local v507 = game:GetService("Workspace");
     local v508 = 350;
     local v509 = v16.Sea:AddSlider("SliderSpeedBoat", {
-        Title = "Tốc Độ Thuyền",
+        Title = "ល្បឿនទូក",
         Description = "",
         Default = v508,
         Min = 0,
@@ -3875,7 +3875,7 @@ if Sea3 then
             if not v513 then
                 v14:Notify({
                     Title = "007",
-                    Content = "កោះឡាវ៉ា Tìm Thấy",
+                    Content = "កោះឡាវ៉ា ស្វែងរក",
                     Duration = 10
                 });
                 v513 = true;
@@ -3884,7 +3884,7 @@ if Sea3 then
         end
     end);
     local v514 = v16.Sea:AddToggle("AutoFindMirage", {
-        Title = "Tìm Đảo Bí Ẩn",
+        Title = "ស្វែងរកកោះ Mirage",
         Description = "",
         Default = false
     });
@@ -3978,8 +3978,8 @@ if Sea3 then
         end
     end);
     local v515 = v16.Sea:AddToggle("AutoFindFrozen", {
-        Title = "Tìm Đảo Leviathan",
-        Description = "Cần 5 Người Không Idk",
+        Title = "ស្វែងរកកោះ Leviathan",
+        Description = "ត្រូវការ 5នាក់ Idk",
         Default = false
     });
     v17.AutoFindFrozen:SetValue(false);
@@ -4063,7 +4063,7 @@ if Sea3 then
             if not v513 then
                 v14:Notify({
                     Title = "007",
-                    Content = "Đảo Leviathan Tìm Thấy",
+                    Content = "បានរកឃើញFrozenDimension",
                     Duration = 10
                 });
                 v513 = true;
@@ -4072,7 +4072,7 @@ if Sea3 then
         end
     end);
     local v516 = v16.Sea:AddToggle("AutoComeTiki", {
-        Title = "Lái Thuyền Về Đảo Tiki",
+        Title = "បើកទូកទៅកោះ Tiki",
         Description = "",
         Default = false
     });
@@ -4114,7 +4114,7 @@ if Sea3 then
         end
     end);
     local v517 = v16.Sea:AddToggle("AutoComeHydra", {
-        Title = "Lái Thuyền Về Đảo Hydra",
+        Title = "បើកទូកទៅកោះ Hydra",
         Description = "",
         Default = false
     });
@@ -4156,7 +4156,7 @@ if Sea3 then
         end
     end);
     v16.Sea:AddButton({
-        Title = "Bay Đến Khu Vực Săn",
+        Title = "ហោះហើរទៅកាន់កន្លែងនេសាទ",
         Description = "",
         Callback = function()
             Tween2(CFrame.new(- 16917.154296875, 7.757596015930176, 511.8203125));
@@ -4179,7 +4179,7 @@ if Sea3 then
         "MarineSloop"
     };
     local v519 = v16.Sea:AddDropdown("DropdownBoat", {
-        Title = "Chọn Thuyền",
+        Title = "ទិញទូកមួយ",
         Description = "",
         Values = v518,
         Multi = false,
@@ -4221,21 +4221,21 @@ if Sea3 then
         end
     end);
     v16.Sea:AddButton({
-        Title = "Mua Thuyền",
+        Title = "ទិញទូក",
         Description = "",
         Callback = function()
             v520(selectedBoat);
         end
     });
     v16.Sea:AddButton({
-        Title = "Bay Đến Thuyền",
-        Description = "Duy Nhất Thuyền Bạn Mua Ở Chỗ Chọn",
+        Title = "ហោះទៅទូក",
+        Description = "ទូកតែមួយគត់ដែលអ្នកទិញនៅកន្លែងដែលអ្នកជ្រើសរើស",
         Callback = function()
             v521();
         end
     });
     local v522 = v16.Sea:AddToggle("ToggleTerrorshark", {
-        Title = "Đấm Cá Mập",
+        Title = "Kill TerrorShark",
         Description = "",
         Default = false
     });
@@ -4273,7 +4273,7 @@ if Sea3 then
         end
     end);
     local v523 = v16.Sea:AddToggle("TogglePiranha", {
-        Title = "Đấm Piranha",
+        Title = "Kill Piranha",
         Description = "",
         Default = false
     });
@@ -4311,7 +4311,7 @@ if Sea3 then
         end
     end);
     local v524 = v16.Sea:AddToggle("ToggleShark", {
-        Title = "Đấm Cá Con",
+        Title = "Kill ដាល់កូនត្រី",
         Description = "",
         Default = false
     });
@@ -4353,7 +4353,7 @@ if Sea3 then
         end
     end);
     local v525 = v16.Sea:AddToggle("ToggleFishCrew", {
-        Title = "Đấm Tàu Cá",
+        Title = "បុកទូកនេសាទ",
         Description = "",
         Default = false
     });
@@ -4395,7 +4395,7 @@ if Sea3 then
         end
     end);
     local v526 = v16.Sea:AddToggle("ToggleShip", {
-        Title = "Đấm Tàu",
+        Title = "Farm Ship",
         Description = "",
         Default = false
     });
@@ -4438,7 +4438,7 @@ if Sea3 then
         end
     end);
     local v527 = v16.Sea:AddToggle("ToggleGhostShip", {
-        Title = "Đấm Tàu Ma",
+        Title = "farm Ghost Ship",
         Description = "",
         Default = false
     });
@@ -4576,7 +4576,7 @@ if Sea3 then
         end
     end);
     local v530 = v16.Main:AddToggle("ToggleElite", {
-        Title = "Đấm Elite",
+        Title = "Kill Elite",
         Description = "",
         Default = false
     });
@@ -9324,7 +9324,7 @@ spawn(function()
     end
 end);
 v14:Notify({
-    Title = "007",
+    Title = "ការប្រើប្រាស់សាកល្បង",
     Content = "ទាញយករួចរាល់",
     Duration = 10
 });
