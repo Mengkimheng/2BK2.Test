@@ -311,16 +311,7 @@ v5:Destroy();
 --         pcall(v422);
 --     end
 -- end);
-local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))();
-local v15 = v14:CreateWindow({
-    Title = "2BK2.Test",
-    SubTitle = "Free Script",
-    TabWidth = 160,
-    Theme = "Dark",
-    Acrylic = false,
-    Size = UDim2.fromOffset(500, 320),
-    MinimizeKey = Enum.KeyCode.End
-});
+
 local v16 = {
     Home = v15:AddTab({
         Title = "ព័ត៌មាន"
